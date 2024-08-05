@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    {% endblock %}
+</head>
+<body>
+    <nav style="background: grey; color: white; border-left: 15%;">
+        <div><h1 style="max-width: fit-content; margin-left: auto; margin-right: auto;">Weather Detector</h1></div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
